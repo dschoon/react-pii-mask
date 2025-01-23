@@ -1,0 +1,42 @@
+{
+  "name": "react-pii-mask",
+  "version": "0.1.0",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "dist/styles.css"
+  ],
+  "scripts": {
+    "build": "rollup -c && cp src/styles.css dist/",
+    "dev": "rollup -c -w",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.6",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.60.0",
+    "typescript": "^4.5.2",
+    "tslib": "^2.3.1"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "typescript"
+  ],
+  "author": "Dan Schoonmaker <dan@schoonlabs.com>",
+  "license": "MIT",
+  "sideEffects": false
+}
